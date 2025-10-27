@@ -39,6 +39,7 @@ cd EbookStore
 dotnet restore
 dotnet ef database update --project EbookStore.Infrastructure --startup-project EbookStore.API
 dotnet run --project EbookStore.API
+```
 
 ## Executando a API
 
@@ -51,6 +52,7 @@ Para executar os testes unitários:
 
 ```bash
 dotnet test
+```
 
 ## Testes
 
@@ -60,11 +62,7 @@ Os testes cobrem as entidades do domínio, garantindo a integridade das regras d
 
 Este projeto está licenciado sob a MIT License.
 
-## Contribuição
-
-Contribuições são bem-vindas. Consulte o arquivo `CONTRIBUTING.md` para mais informações.
-
 ## Contato
 
-Desenvolvido por Ghitado TM  
-Email: ghitado@example.com
+Desenvolvido por Thiago de Melo Mota
+E-mail: thiagodemelomota@gmail.com
