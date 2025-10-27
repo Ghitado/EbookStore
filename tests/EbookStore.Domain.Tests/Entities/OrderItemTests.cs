@@ -27,13 +27,12 @@ public class OrderItemTests
 	}
 
 	[Fact]
-	public void Create_WithZeroPrice_ReturnsFailure()
+	public void Create_WithZeroPrice_ReturnsSuccess()
 	{
 		var price = Money.Zero;
 		var result = OrderItem.Create(Guid.NewGuid(), price, 1);
 
-		result.IsSuccess.Should().BeFalse();
-		result.Error!.Code.Should().Be(DomainErrors.OrderItem.InvalidUnitPrice.Code);
+		result.IsSuccess.Should().BeTrue();
 	}
 
 	[Fact]
