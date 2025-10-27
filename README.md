@@ -54,8 +54,6 @@ Para executar os testes unitários:
 dotnet test
 ```
 
-## Testes
-
 Os testes cobrem as entidades do domínio, garantindo a integridade das regras de negócio.
 
 ## Licença
